@@ -1291,8 +1291,6 @@
             setErr(campoClv, hintClv, '');
             btn.disabled        = true;
             btn.textContent     = 'Ingresando...';
-            msg.textContent     = '';
-            msg.className       = 'msg-estado';
 
             fetch('http://localhost:3000/login', {
                 method:  'POST',
