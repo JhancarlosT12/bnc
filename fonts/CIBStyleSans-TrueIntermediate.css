@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'CIBStyle Sans';
+    src: url('./CIBStyleSans-TrueIntermediate.ttf') format('truetype');
+    font-weight: 350;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Peso real intermedio: el contorno fue interpolado
+   entre Lato Light y Lato Regular. */
